@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>myCASA</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<!-- OPTIMIZE:  -->
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<link rel="stylesheet" href="css/lead.css">
+		<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/furnace.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body class="live-demo au-body au-grid js">
+<main class="au-grid">
+<body class="live-demo au-body au-grid js">
+	<header class="au-header logo au-body au-body--dark" role="banner">
+	<div class="header">
+		<div class="container">
+	    <div class="row">
+	      <div class="col-md-9 col-xs-7">
+	        <a class="au-header__brand" href="user-dashboard-renew.html">
+	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
+	        </a>
+	      </div>
+				<div class="col-md-3 col-xs-5"><a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a></div>
+	    </div>
+		</div>
+	</div>
+	</header>
+	<div class="banner">
+	<div class=container>
+		<style>
+			.banner {padding-left: 25px;}
+			.banner {padding-top: 10px;}
+			.banner {padding-bottom: 10px;}
+		</style>
+		This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+	</div>
+	</div>
+
+
+	<div class="body">
+		<div class="container">
+
+			<div class="col-md-10">
+			<nav class="au-breadcrumbs" aria-label="breadcrumb">
+			  <ul class="au-link-list au-link-list--inline sm-hidden">
+			    <li><a href="user-dashboard.html">Home</a></li>
+
+			    <li><a href="org-dashboard-renew.html">Wendy's Weddings</a></li>
+				  				<li><abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.2222 details</li>
+
+			  </ul>
+				<!--<div class="lg-hidden"><a class="au-direction-link au-direction-link--left" href="00-user-homepage.html">Home</a></div>-->
+			</nav>
+			<div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="dec-error" style="width:100%;">
+				<h3>Please complete the declaration to complete your application</h3>
+			</div>
+			<header class="au-header" role="banner">
+				<h1 class="m-t-0"><abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.2222 subsequent issue (renewal) </h1>
+				<a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
+			</header>
+
+	<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+
+
+		<div class="dec">
+		<h3>Application summary</h3>
+			
+		<p><strong>Total fee payable:</strong> $480</p>
+			
+			<br />
+			
+		<div aria-label="Callout description1">
+			<ul>
+
+				<li>Please carefully review the details of your <a href="org-manage-reoc-renewal.html#flight" target="_blank">ReOC.2222 on your ReOC details page</a> as you can only make this application if there are <strong>no changes</strong> to your current <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>
+				</li>
+				<li>Any changes required must be submitted through <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-02.pdf" target="_blank">Form 101-02 Application for <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> Variation</a> 
+		and <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-03.pdf" target="_blank">Form 101-03 Application for <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> Subsequent Issue</a> along with the appropriate fee payment
+					
+				</li>
+				<li>The subsequent issue will be valid for three years</li>
+				<!--
+				<li>It will take approximately 3-5 business days for your ReOC to be updated. If your ReOC expires in this period you may continue operating until it has been officially extended.</li>-->
+			</ul>
+			
+
+
+		</div>
+			<br />
+		<h3>Declaration</h3><br />
+			<div class="au-callout" aria-label="Callout description1">
+			<label class="au-control-input m-t-0">
+				<input class="au-control-input__input" type="checkbox" name="checkbox-ex-dec" id="declaration">
+				<span class="au-control-input__text form-text p-t-0">
+					I declare that my application is under the same conditions and details as currently relate to <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.2222 and the information provided in this application form is true and correct. Giving false or misleading information is an offence under the regulations.
+				</span>
+			</label>
+			</div>
+
+	</div>
+<p>&nbsp;</p>
+<div class="declaration">
+	<a href="payment.html" class="au-btn" id="next">Proceed to Payment</a>
+	<p class="westpac">You will be directed to Westpac for payment</p>
+</div>
+
+		</div>
+	</div>
+</div><!-- container -->
+			</div>
+			</div>
+	</div>
+
+
+<div class="footer">
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+</main>
+
+<script>
+//$('.declaration').hide();
+$('#next').click(function(){
+	//$('#declaration').change(function(){
+	checked = $('input[name="checkbox-ex-dec"]').is(':checked');
+		 if(checked == false){
+				 $('#dec-error').removeClass('hidden');
+				 $('html').scrollTop(0);
+				 return false;
+		 }
+		 else {
+			 $('#dec-error').addClass('hidden');
+			 return true;
+		 }
+	//});
+
+});
+
+</script>
+
+
+</body>
+</html>
