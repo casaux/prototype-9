@@ -10,8 +10,7 @@
 	<link rel="stylesheet" href="css/furnace.min.css">
 	<link rel="stylesheet" href="css/lead.css">
 		<link rel="stylesheet" href="css/main.css">
-	<script type="text/javascript" src="js/furnace.min.js"></script>
-	<script src="js/jquery.min.js"></script>
+
 </head>
 
 <body class="live-demo au-body au-grid js">
@@ -22,11 +21,24 @@
 		<div class="container">
 	    <div class="row">
 	      <div class="col-md-9 col-xs-7">
-	        <a class="au-header__brand" href="user-dashboard-renew.html">
+	        <a class="au-header__brand" href="dashboard.html">
 	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
 	        </a>
 	      </div>
-				<div class="col-md-3 col-xs-5"><a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a></div>
+				<div class="col-md-3 col-xs-5">
+					<!--<a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a>-->
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							My Account
+							<span class="badge badge-warning dropdown-badge">1</span>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="org-notifications.html">Notifications <span class="badge badge-warning">1</span></a>
+							<a class="dropdown-item" href="#">My details</a>
+							<a class="dropdown-item" href="mycasa.html" style="border-top:1px solid #efefef;padding-top:.5rem;margin-top:.5rem;">Sign out</a>
+						</div>
+					</div>
+				</div>
 	    </div>
 		</div>
 	</div>
@@ -49,7 +61,7 @@
 			<div class="col-md-10">
 			<nav class="au-breadcrumbs" aria-label="breadcrumb">
 			  <ul class="au-link-list au-link-list--inline sm-hidden">
-			    <li><a href="user-dashboard.html">Home</a></li>
+			    <li><a href="dashboard.html">Home</a></li>
 
 			    <li><a href="org-dashboard-renew.html">Wendy's Weddings</a></li>
 				  				<li><abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.2222 details</li>
@@ -72,25 +84,25 @@
 
 		<div class="dec">
 		<h3>Application summary</h3>
-			
+
 		<p><strong>Total fee payable:</strong> $480</p>
-			
+
 			<br />
-			
+
 		<div aria-label="Callout description1">
 			<ul>
 
 				<li>Please carefully review the details of your <a href="org-manage-reoc-renewal.html#flight" target="_blank">ReOC.2222 on your ReOC details page</a> as you can only make this application if there are <strong>no changes</strong> to your current <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>
 				</li>
-				<li>Any changes required must be submitted through <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-02.pdf" target="_blank">Form 101-02 Application for <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> Variation</a> 
+				<li>Any changes required must be submitted through <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-02.pdf" target="_blank">Form 101-02 Application for <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> Variation</a>
 		and <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-03.pdf" target="_blank">Form 101-03 Application for <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> Subsequent Issue</a> along with the appropriate fee payment
-					
+
 				</li>
 				<li>The subsequent issue will be valid for three years</li>
 				<!--
 				<li>It will take approximately 3-5 business days for your ReOC to be updated. If your ReOC expires in this period you may continue operating until it has been officially extended.</li>-->
 			</ul>
-			
+
 
 
 		</div>
@@ -126,6 +138,10 @@
 		</div>
 	</div>
 </main>
+<script type="text/javascript" src="js/furnace.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <script>
 //$('.declaration').hide();
@@ -144,6 +160,8 @@ $('#next').click(function(){
 	//});
 
 });
+
+$('.dropdown-toggle').dropdown();
 
 </script>
 
