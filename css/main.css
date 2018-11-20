@@ -140,7 +140,7 @@ input[type=number]::-webkit-outer-spin-button {
 .timeline ul {margin-left: -1.3rem;}
 .event:first-child{margin-top:.8rem;}
 .event {
-	margin-top:2rem;position:relative;
+	margin-top:2rem;position:relative;padding-left:.4rem;
 }
 .event-indicator {
     border-top: 3px solid #006a93;
