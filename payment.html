@@ -46,50 +46,80 @@
 					<h2 class="au-display-lg">Payment Details</h2>
 					<p>
 						Enter your payment details below. Fields marked with an asterisk (<span style="color: #D5022B">*</span>) are mandatory.<br><br>
-						<strong>Reference Number</strong><br>
-						123
-						<br><br>
-						<strong>Customer reference number</strong><br>
-						16666-2018-Y78L9
-						<br><br>
-						<strong>ARN</strong><br>
-						321 4567
-						<br><br>
-						<strong>Amount</strong><br>
-						$480
-						<br><br>
-					</p>
-					<div class="form-section">
-					<label for="text-input-block">Cardholder name</label>
-					<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value="">
-					</div>
-					<div class="form-section">
-					<label for="text-input-block">Creditcard number</label>
-					<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value="" style="width:70%!important;float:left;">
-					<img src="img/cardType.jpg" alt="" width="100px" style="float:left; margin-top:-.3rem;padding-left:1rem;"/>
-					</div>
+						
+						<div>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong>Reference Number</strong></div>
+								<div class="col-md-3 col-xs-3">123</div>
+							</li>
+							<br>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong>Customer Reference Number</strong></div>
+								<div class="col-md-3 col-xs-3">16666-2018-Y78L9</div>
+							</li>
+							<br>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong>ARN</strong></div>
+								<div class="col-md-3 col-xs-3">3214567</div>
+							</li>
+							<br>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong>Amount</strong></div>
+								<div class="col-md-3 col-xs-3">$480</div>
+							</li>
+							<br>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong><span style="color: #D5022B">*</span>Cardholder Name</strong></div>
+								<div class="col-md-5 col-xs-3"><input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value=""></div>
+							</li>
+							<br>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong><span style="color: #D5022B">*</span>Credit Card Number</strong></div>
+								<div class="col-md-5 col-xs-3"><input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value=""></div>
+								<div class="col-md-2 col-xs-3"><img src="img/cardType.jpg" alt="" width="100px" style="float:left; margin-top:-.3rem;padding-left:1rem;"/></div>
+							</li>
+							<br>
 
-					<div class="form-section">
-					<div class="date-entry">
-					<p class="label">Expiry date</p>
-
-					<div class="date date-day">
-						<label for="text-input-block1" class="form-text">Month</label>
-						<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block1" type="text" value="">
-					</div>
+														<li class="row">
+								<div class="col-md-5 col-xs-3"><strong><span style="color: #D5022B">*</span>Expiry Date (mm/yy)</strong></div>
+								<div class="col-md-2 col-xs-2"><div class="date date-day">
+<select id="select1" class="au-select">
+  <option value="1">01</option>
+  <option value="2">02</option>
+  <option value="3">03</option>
+	  <option value="4">04</option>
+  <option value="5">05</option>
+  <option value="6">06</option>
+	  <option value="7">07</option>
+  <option value="8">08</option>
+  <option value="9">09</option>
+	  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+</select>
+									</div></div>
 					<div class="date date-month">
-						<label for="text-input-block2" class="form-text">Year</label>
-						<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block2" type="text" value="">
+												<select id="select1" class="au-select">
+  <option value="1">18</option>
+  <option value="2">19</option>
+  <option value="3">20</option>
+	  <option value="4">21</option>
+  <option value="5">22</option>
+  <option value="6">23</option>
+	  <option value="7">24</option>
+  <option value="8">25</option>
+</select>
 					</div>
+							</li>
+							<br>
+							<li class="row">
+								<div class="col-md-5 col-xs-3"><strong><span style="color: #D5022B">*</span>Card Verification Number (CVN)</strong></div>
+								<div class="col-md-5 col-xs-3"><input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value=""></div>
+							</li>
 					</div>
-					</div>
+						
 
-					<div class="form-section">
-					<div class="date date-year">
-						<label for="text-input-block3">CVV</label>
-						<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block3" type="text" value="" style="width:25%!important;">
-					</div>
-				 </div>
+					</p>
 
 
 				 <!--<div class="form-section">
