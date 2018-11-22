@@ -21,6 +21,39 @@ transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 .banner a {color:#fff;}
 .banner a:hover, .banner a:focus {color:#fff;}
 
+.au-body .au-accordion__title:focus,.au-accordion__title:focus{outline-color:#12b5ea;}
+.au-body a:focus{outline-color:#12b5ea;}
+.au-body a::-moz-focus-inner{border:0}.au-body [tabindex="0"]:focus,.au-body :target{outline-color:#12b5ea}
+.au-btn:focus,a.au-btn:focus{outline-color:#12b5ea;}
+.au-cta-link:focus{outline-color:#12b5ea;}
+.au-control-input__input:focus+.au-control-input__text:before,.au-control-input__input:focus+.au-control-input__text:after{outline-color:#12b5ea;}
+.au-direction-link:focus{outline-color:#12b5ea;}
+.au-body .au-progress-indicator__link:focus,.au-progress-indicator__link:focus{outline-color:#12b5ea;}
+.au-select:focus{outline-color:#12b5ea;}
+.au-skip-link__link:active,.au-skip-link__link:focus{outline-color:#12b5ea;}
+.au-tags>li>a:focus,.au-tags>li>button:focus,.au-tags>dd>a:focus,.au-tags>dd>button:focus{outline-color:#12b5ea;}
+.au-text-input:focus{outline-color:#12b5ea;}
+
+
+
+/*
+focus over-rides for accessibility
+dark theme
+*/
+
+.au-accordion--dark .au-body .au-accordion__title:focus,.au-accordion--dark .au-accordion__title:focus{outline-color:#FFE17D;}
+.au-body.au-body--dark a:focus{outline-color:#FFE17D;}
+.au-body.au-body--dark [tabindex="0"]:focus,.au-body.au-body--dark :target{outline-color:#FFE17D;}
+.au-btn.au-btn--dark:focus,a.au-btn.au-btn--dark:focus{outline-color:#FFE17D;}
+.au-cta-link.au-cta-link--dark:focus{outline-color:#FFE17D;}
+.au-control-input--dark .au-control-input__input:focus+.au-control-input__text:before,.au-control-input--dark .au-control-input__input:focus+.au-control-input__text:after{outline-color:#FFE17D;}
+.au-direction-link.au-direction-link--dark:focus{outline-color:#FFE17D;}
+.au-body--dark .au-progress-indicator--dark .au-body .au-progress-indicator__link:focus,.au-progress-indicator--dark .au-body .au-progress-indicator__link:focus,.au-body--dark .au-progress-indicator--dark .au-progress-indicator__link:focus,.au-progress-indicator--dark .au-progress-indicator__link:focus{outline-color:#FFE17D;}
+.au-select.au-select--dark:focus{outline-color:#FFE17D;}
+.au-tags.au-tags--dark>li>a:focus,.au-tags.au-tags--dark>li>button:focus,.au-tags.au-tags--dark>dd>a:focus,.au-tags.au-tags--dark>dd>button:focus{outline-color:#FFE17D;}
+.au-text-input.au-text-input--dark:focus{outline-color:#FFE17D;}
+
+
 /* Buttons */
 .btn-edit,.btn-delete{
   padding: .5rem;

@@ -310,7 +310,7 @@ a.casa-card:hover {
 
 .au-body .au-accordion__title:focus,.au-accordion__title:focus{outline-color:#12b5ea;}
 .au-body a:focus{outline-color:#12b5ea;}
-.au-body a::-moz-focus-inner{border:0}.au-body [tabindex="0"]:focus,.au-body :target{outline-color:#9263DE}
+.au-body a::-moz-focus-inner{border:0}.au-body [tabindex="0"]:focus,.au-body :target{outline-color:#12b5ea}
 .au-btn:focus,a.au-btn:focus{outline-color:#12b5ea;}
 .au-cta-link:focus{outline-color:#12b5ea;}
 .au-control-input__input:focus+.au-control-input__text:before,.au-control-input__input:focus+.au-control-input__text:after{outline-color:#12b5ea;}
